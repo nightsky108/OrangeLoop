@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+    android:id="@+id/eventWrap"
+        android:descendantFocusability="blocksDescendants"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/evbg">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imgBG"
+            android:contentDescription="@string/club_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <!-- Contain Text -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OrgDesc"
+            android:id="@+id/Org_Desc"
+            android:textColor="#ffffff"
+            android:fontFamily="\@fonts/Quicksand-Light"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OrgName"
+            android:id="@+id/Org_Name"
+
+            android:textColor="#ffffff"
+            android:fontFamily="\@fonts/Quicksand-Light"
+            android:focusableInTouchMode="false"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:textAlignment="textStart"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.threeamstudios.theorangeloop.EventPage"
+    android:background="@drawable/paper_bg"
+    android:padding="10dp"
+    android:clickable="true"
+    android:onClick="react">
+
+    <!-- HTTP Image -->
+    <ImageView
+        android:id="@+id/imageViewClub"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/hello"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageViewClub">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event Name"
+            android:id="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:textColor="#B45F04"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="\@fonts/Quicksand_Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Group Study"
+            android:id="@+id/RegisteredEventName"
+            android:textColor="#ffffff"
+            android:fontFamily="\@fonts/Quicksand_Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event Description"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:textColor="#B45F04"
+            android:fontFamily="\@fonts/Quicksand_Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students get ready for FINALS"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/RegisteredEventDesc"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button4"
+            android:background="@drawable/button_styles"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View My Orgs"
+            android:id="@+id/button3"
+            android:onClick="viewMy"
+            android:background="@drawable/button_styles"
+            android:textColor="#ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:text="Number of Orgs"
+            android:id="@+id/button6"
+            android:background="@drawable/button_styles"
+            android:textColor="#ffffff" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

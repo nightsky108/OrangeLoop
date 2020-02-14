@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:id="@+id/regWrap"
+    android:descendantFocusability="blocksDescendants"
+    android:visibility="visible"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/evbg"
+        android:layout_weight="0.01">
+
+        <!-- Contain Text -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OrgDesc"
+            android:id="@+id/regOrg_Desc"
+            android:textColor="#ffffff"
+            android:fontFamily="\@fonts/Quicksand-Light"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OrgName"
+            android:id="@+id/regOrg_Name"
+
+            android:textColor="#ffffff"
+            android:fontFamily="\@fonts/Quicksand-Light"
+            android:focusableInTouchMode="false"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:textAlignment="textStart"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
